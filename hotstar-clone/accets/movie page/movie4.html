@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--css file-->
+  <link rel="stylesheet" href="./css/movie.css">
+  <!--boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BOXICON -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<!-- nav -->
+<div class="row overflow-hidden">
+  <div class="col-12 position-absolute top-0" style="background-color: #192133;">
+      <nav class="navbar navbar-expand-lg mh navbar-dark">
+          <li class="nav-item dropdown d-none d-sm-none d-md-none d-lg-block">
+              <a class=" nav-link dropdown text-light " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="font-size: 16px; font-weight: 400; text-transform: none;">
+                  <i class="fa-solid fa-bars"></i>
+              </a>
+              <ul class="dropdown-menu bg-black">
+                  <li><a class="dropdown-item text-light tv" href="#"><i class="fa-solid fa-display "></i> Channel</a></li>
+                  <li><a class="dropdown-item text-light tv" href="#"><i class="fa-solid fa-language "></i>  Languages</a></li>
+                  <li><a class="dropdown-item text-light tv" href="#"><i class="fa-solid fa-masks-theater "></i> Geners</a></li>
+              </ul>
+          </li>
+          <div class="container-fluid">
+              <a class="navbar-brand " href="#">
+                  <img class="brand-logo"
+                      src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                      alt="Disney+&nbsp;Hotstar">
+                  <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                      aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                              aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                              <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#"></a>
+                              </li>
+                              <li class="nav-item dropdown ">
+                                  <a class=" nav-link dropdown text-light " href="#" role="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false"
+                                      style="font-size: 16px; font-weight: 400; text-transform: none;">
+                                      TV
+                                  </a>
+                                  <ul class="dropdown-menu bg-black">
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">V Day Special</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">StarPlus</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Hostar Special</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Star Bharat</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Star Vijay</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Star Maa</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Star Jalsa</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Star Prvah</a></li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li><a class="dropdown-item text-light border-top tv" href="#">More...</a></li>
+                                  </ul>
+                              </li>
+                              <li class="border-md-bottom nav-item dropdown">
+                                  <a class="nav-link dropdown text-light " href="#" role="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false"
+                                      style="font-size: 16px; font-weight: 400; text-transform: none;">
+                                      Movies
+                                  </a>
+                                  <ul class="dropdown-menu bg-black">
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Hindi</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">English</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Telugu</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Tamil</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Bengali</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Malyalam</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Marathi</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Kannad</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Korean</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Japanese</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Odia</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropdown">
+                                  <a class="border-md-bottom nav-link dropdown text-light " href="#" role="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false"
+                                      style="font-size: 16px; font-weight: 400;">
+                                      Sports
+                                  </a>
+                                  <ul class="dropdown-menu bg-black">
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Cricket</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Football</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Hockey</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Khelo India</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Formula E</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Kabaddi</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Martial Arts</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">American Football</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Tennis</a></li>
+                                      <li><a class="dropdown-item text-light tv" href="./assets/nav.html">Athletics</a></li>
+                                  </ul>
+                              </li>
+                              <li style="cursor:pointer;" class="nav-item">
+                                  <a class="border-md-bottom nav-link   text-light">Disney+</a>
+                              </li>
+                              <li style="cursor:pointer;" class="nav-item">
+                                  <a class="border-md-bottom nav-link   text-light"><img
+                                          src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"
+                                          alt=""></a>
+                              </li>
+                          </ul>
+                          <div class="right-container">
+                              <input type="text" class="search-box" placeholder="Search">
+                              <button class="sub-btn">subscribe</button>
+                              <a href="#" class="login-link">login</a>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+
+      </nav>
+
+
+  <div class="container-fluid  mt-2" style="height: 450px;">
+    <div class="row">
+      <div class="col-1 d-none d-sm-none d-md-block"></div>
+      <div class="col-5 d-sm-none d-none d-lg-block bg-black" style=" border-radius:10px 0px 0px 10px;">
+        <h2 class="text-light mt-5 ms-4">Date with senior-College Romance</h2>
+        <p class="text-light ms-4" style="font-size: 19px; font-weight: 500;">4 Seasons . 1st Episode .
+          Mythology . U/A 13+ . Hindi . Youtubes</p>
+        <div class="description text-light ms-4" style="font-weight: 500;"> Kush has a huge crush on his college
+          senior, Shikha. But she already has a boyfriend, Tanmay. Due to Tanmay's over smartness, Shikha
+          finds her business in a mess. Can Kush help her out?</div>
+        <div class="row  ms-4 mt-5">
+          <div class="col-1"></div>
+          <div class="col-1">
+
+            <section class="videobox">
+              <div class="overlay-box popup-vimeo">
+                <i class="fa-solid fa-play" style="font-size: 32px; color: rgb(146, 151, 151);"></i>
+                <a class="play-it modal hide-for-touch" href="https://www.youtube.com/watch?v=teis6lAE5fY"
+                  title="Watch Video" target="_top"></a>
+              </div>
+            </section>
+          </div>
+          <div class="col-3 ">
+            <div class="row" style="font-weight:500 ;color: rgb(146, 151, 151); ">Watch 8 Episodes</div>
+            <div class="row" style="font-weight:500 ;color: rgb(146, 151, 151);">S1 E2 . 16 Sep 2013</div>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-2">
+            <div class="row text-light" title="WATCHLIST">
+              <i class="fa-solid fa-plus" style="font-size: 30px;margin-left:15px ; color: rgb(255, 255, 255);"></i>
+            </div>
+            <div class="row text-light" style="font-weight:500 ;" title="WATCHLIST">WATCHLIST</div>
+          </div>
+          <div class="col-1">
+            <div class="row text-light">
+              <i class="fa-solid fa-share-nodes" style="font-size: 30px; color: rgb(255, 255, 255);"></i>
+            </div>
+            <div class="row text-light" style="font-weight:500 ;">SHARE</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 bg-black" style=" border-radius:0px 10px 10px 0px;">
+        <img src="https://i.postimg.cc/1X0xGp91/1113923-h-8c48e3088be2.webp" alt="" class="movieimg img-fluid">
+      </div>
+      <div class="col-1 d-none d-sm-none d-md-block"></div>
+    </div>
+  </div>
+
+
+
+  <!-- CARD  -->
+
+  <section class="movies-list bg-black" style="background-color: transparent !important;">
+    <h4 class="fw-bolder ms-5 mt-5 text-light">Shows Recommended For You</h4>
+    <div class="carouselOfImages">
+      <div class="card">
+        <img src="https://i.postimg.cc/xdZTtkZF/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Anupama</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center">Add to watchlist</button>
+        </div>
+      </div>
+      
+      <!-- 2.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/FH1MGPQN/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Yeh Rishta Kya Kehlata Hai</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center "> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 3.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/2jMhVy8G/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Imlie</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 4.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/cCnhk5ct/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Ghum Hai Kisikey Pyaar Meiin</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 5.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/G3KmHhPN/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Pandya Store</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+      <!-- 6.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/qMtH4k12/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Aashiqana</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 7.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/XvNbM9mY/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Teri Meri Doriyaannt</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</a></button>
+        </div>
+      </div>
+      <!-- 8.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/8Cfbz0qK/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Yeh Hai Chahatein</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 9.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/Y0rgYnsw/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">The Mandalorian</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+      <!-- 10.card -->
+      <div class="card">
+        <img src="https://i.postimg.cc/nc6rtSGc/image.png" alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Na Umra Ki Seema Ho</h2>
+          <h6 class="des text-center">Serial</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 2 -->
+   
+  <section class="movies-list">
+    <h4 class="fw-bolder ms-5 mt-5 text-light">Latest & Trending</h4>
+    <div class="carouselOfImages">
+       <div class="card">
+        <img
+          src="https://i.postimg.cc/C1Q7MVKQ/image.png"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Alone</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+
+      <!-- 2.card -->
+      <div class="card">
+        <img
+          src="https://i.postimg.cc/4xjh3Nvt/image.png"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Gulmohar</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 3.card -->
+      <div class="card">
+        <img
+          src="https://i.postimg.cc/Y0rgYnsw/image.png"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">The Mandalorian</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 4.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6677/1476677-v-afe46e2c17e2"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Ghum Hai Kisikey Pyaar Meiin</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+      <!-- 5.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6693/1476693-v-f43674c07ba5"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Pandya Store</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</a></button>
+        </div>
+      </div>
+      <!-- 6.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9847/1469847-v-8ccfe08829e1"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Malikappuram</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 7.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7257/1467257-v-9cdcdf57beca"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Jhansi</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 8.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1158/1451158-v-60ae0c6f2c82"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Mukundan Unni Associates</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist </button>
+        </div>
+      </div>
+      <!-- 9.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5420/1445420-v-50e5c9e5afc8"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Taaza Khabar</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 10.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7220/1467220-v-b63ce1315786"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Dear Ishq</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- CARD 3 -->
+
+<section class="movies-list">
+    <h4 class="fw-bolder ms-5 mt-5 text-light">Popular in Action</h4>
+    <div class="carouselOfImages">
+       <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6757/1476757-v-a8b0daa00556"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Kaduva</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+
+      <!-- 2.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6693/1476693-v-f43674c07ba5"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Veera Simha Reddy</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 3.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9759/1479759-v-540edf5a9a32"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">The Legend</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+      <!-- 4.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4572/1284572-v-f85126d33072"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Price Of Passion</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 5.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8478/1478478-v-3a45a2ae5b3e"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">The Mandalorian</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 6.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9439/529439-v"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Malikappuram</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+      <!-- 7.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7257/1467257-v-9cdcdf57beca"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">India's Most Wanted</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 8.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/499/1000200499/1000200499-v"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Khaidi No. 150</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center">add to watchlist</button>
+        </div>
+      </div>
+      <!-- 9.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5120/1455120-v-114e62176f39"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Black Panther: Wakanda Forever</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</button>
+        </div>
+      </div>
+      <!-- 10.card -->
+      <div class="card">
+        <img
+          src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/old_images/vertical/MOVIE/3838/1000053838/1000053838-v"
+          alt="" class="card-img" />
+        <div class="card-body">
+          <h2 class="name text-center">Baby</h2>
+          <h6 class="des text-center">Movie</h6>
+          <button class="watchlist-btn text-center"> add to watchlist</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <nav class="nav">
+            <a class="nav-link" href="#">About Disney+ Hotstar</a>
+            <a class="nav-link" href="#">Terms Of Use</a>
+            <a class="nav-link" href="#">Privacy Policy</a>
+            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#">Feedback</a>
+            <a class="nav-link" href="#">Careers</a>
+
+          </nav>
+          <p>© 2023 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming
+            logos
+            are service marks of, and all related programming visuals and elements are the property of,
+            Home Box Office, Inc. All rights reserved.</p>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 text-center">
+          <p>Connect with us</p>
+          <i class='bx bxl-facebook icon'></i>
+          <i class='bx bxl-twitter ms-4 icon'></i>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 text-center">
+          <p>Disney+ Hotstar App</p>
+          <img src="https://i.postimg.cc/52wQ0j6M/googleplay.png" alt="" width="200px" height="50px">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--boostrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://npmcdn.com/flickity@2/dist/flickity.pkgd.js'></script>
+  <!-- js -->
+  <script src="./js/card.js"></script>
+
+</body>
+
+</html>

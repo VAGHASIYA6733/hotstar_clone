@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(19, 19, 36, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+    rgba(19, 19, 36, 0.8)
+
+    ),
+    url(///////////////);
+   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ced-img */
+
+
+
+#cards-container {
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 99999px;
+  }
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #000;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 135px;
+    margin: 15px 7.5px;
+  }
+  
+  .card:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .card .img {
+    max-width: 220px;
+    height: 220px;
+    display: inline-block;
+  }
+ 
+  .card-body {
+    opacity: 0;
+    width: 100%;
+    height: 121px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+ }
+ .card-container {
+    position: absolute;
+    width: 96%;
+    padding-left: 4%;
+    height: 120PX;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+ }
+
+ .card-container::-webkit-scrollbar {
+    display: none;
+ }
+
+ .card {
+    position: relative;
+    min-width: 150px;
+    width: 190px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: .5s;
+    background: #000;
+ }
+ .card:hover {
+    transform: scale(1.1);
+ }
+ .card:hover .card-body {
+    opacity: 1;
+ }
+
+ .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ }
+
+ .card-body {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+ }
+ .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ } 
+ 
+ .card-body {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+ }
+ .card:hover .card-body {
+    opacity: 1;
+ }
+
+ 
+ 
+
+ .card-body {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+ }
+
+ .name {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+ }
+ .des {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+ }
+ 
+ 
+
+.watchlist-btn {
+   position: relative;
+   width: 100%;
+   text-transform: capitalize;
+   background: none;
+   border: none;
+   font-weight: 500;
+   text-align: right;
+   color: rgba(255, 255, 255, 0.5);
+   margin: 5px 0;
+   cursor: pointer;
+   padding: 10px 5px;
+   border-radius: 5px;
+}
+
+.watchlist-btn::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -5px;
+   height: 35px;
+   width: 35px;
+   /* background-image: url(images/add.png); */
+   background-size: cover;
+   transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+   color: #fff;
+   background: rgba(255, 255, 255, 0.1);
+}
